@@ -2,11 +2,13 @@
 import React from "react";
 
 import MyHeader from "../global/header/MyHeader";
+import BannerSection from "./BannerSection";
 
 const Homepage = () => {
   return (
     <>
       <MyHeader />
+      <BannerSection />
       <div className="bg-[lawngreen]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
         ad libero nulla officia magni rem, cum voluptates eum voluptas
