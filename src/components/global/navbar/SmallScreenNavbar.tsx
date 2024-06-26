@@ -28,7 +28,7 @@ const SmallScreenNavbar = () => {
                 className="w-[4rem]"
               />
             </div>
-            <div className="font-medium text-lg">ArchDune</div>
+            <div className="font-medium text-lg tracking-widest">ArchDune</div>
           </div>
           <div>
             {dropDownOpenStatus === "CLOSED" && (
