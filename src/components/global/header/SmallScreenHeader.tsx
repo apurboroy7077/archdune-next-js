@@ -26,7 +26,9 @@ const SmallScreenHeader = () => {
   return (
     <>
       <header
-        className={`bg-[white] ${isSticky === "STICKY" ? " sticky top-0" : ""}`}
+        className={`bg-[white] z-50 ${
+          isSticky === "STICKY" ? " sticky top-0" : ""
+        }`}
       >
         <SmallScreenNavbar />
       </header>
