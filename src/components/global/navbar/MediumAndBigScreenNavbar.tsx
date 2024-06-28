@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import BigScreenLinkType1 from "./BigScreenLinkType1";
+import BigScreenLinkType2 from "./BigScreenLinkType2";
 const MediumAndBigScreenNavbar = () => {
   return (
     <>
@@ -68,7 +69,13 @@ const MediumAndBigScreenNavbar = () => {
             <div className="flex gap-9 pt-5">
               <BigScreenLinkType1 name="Home" link="/" />
               <BigScreenLinkType1 name="Project" link="/project" />
-              <BigScreenLinkType1 name="Learn" link="/learn" />
+              <BigScreenLinkType2
+                mainName="Learn"
+                properties={[
+                  { name: "Join Live Sessions", link: "/live-sessions" },
+                  { name: "Buy Recorded Class", link: "/recorded-class" },
+                ]}
+              />
               <BigScreenLinkType1 name="Competition" link="/competition" />
               <BigScreenLinkType1 name="Fellowship" link="/fellowship" />
             </div>

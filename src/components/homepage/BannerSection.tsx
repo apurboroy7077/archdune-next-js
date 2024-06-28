@@ -7,7 +7,7 @@ const BannerSection = () => {
         <img
           src="/images/images-1/archdune-banner-1.jpg"
           alt=""
-          className="w-full max-w-[150rem] mx-auto"
+          className="w-full max-w-[150rem] mx-auto z-[1]"
         />
       </section>
     </>
