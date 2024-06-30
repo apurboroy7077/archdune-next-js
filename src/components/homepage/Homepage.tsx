@@ -5,6 +5,7 @@ import MyHeader from "../global/header/MyHeader";
 import BannerSection from "./BannerSection";
 import MyFooter from "../global/footer/MyFooter";
 import SketchBookSection from "./SketchBookSection";
+import SkillDevelopmentCourseSection from "./SkillDevelopmentCourseSection";
 
 const Homepage = () => {
   return (
@@ -12,6 +13,7 @@ const Homepage = () => {
       <MyHeader />
       <BannerSection />
       <SketchBookSection />
+      <SkillDevelopmentCourseSection />
       <MyFooter />
     </>
   );

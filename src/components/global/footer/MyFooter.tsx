@@ -7,7 +7,7 @@ import FooterLogoLinkType1 from "./FooterLogoLinkType1";
 const MyFooter = () => {
   return (
     <footer>
-      <div className="bg-[#3A3A3A] px-2 py-3 pb-5">
+      <div className="bg-[#3A3A3A] px-2 py-3 pb-5 mt-16 lg:mt-20">
         <div className="md:flex md:justify-between md:gap-5">
           <div className=" md:w-[25%] md:flex md:justify-center md:items-center">
             <div className="text-[white] text-[2rem] tracking-widest cursor-pointer hover:text-[#e48300] transition-all duration-500">
