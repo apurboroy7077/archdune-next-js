@@ -7,6 +7,7 @@ import MyFooter from "../global/footer/MyFooter";
 import SketchBookSection from "./SketchBookSection";
 import SkillDevelopmentCourseSection from "./SkillDevelopmentCourseSection";
 import ProjectsSection from "./ProjectsSection";
+import JuryPanelSection from "./JuryPanelSection";
 
 const Homepage = () => {
   return (
@@ -16,6 +17,7 @@ const Homepage = () => {
       <SketchBookSection />
       <SkillDevelopmentCourseSection />
       <ProjectsSection />
+      <JuryPanelSection />
       <MyFooter />
     </>
   );
