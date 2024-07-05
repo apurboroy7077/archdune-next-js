@@ -6,7 +6,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-const SkillDevelopmentCarousel = () => {
+import projectsData1 from "@/data/data-1/projectsData1";
+import Link from "next/link";
+const ProjectsCarousel = () => {
   const swiperRef = useRef(null);
   const handlePrevious = useCallback(() => {
     if (swiperRef.current) {
@@ -35,8 +37,8 @@ const SkillDevelopmentCarousel = () => {
           autoplay={{ delay: 2000, disableOnInteraction: false }}
           loop={true}
         >
-          {skillDevelopmentCarouselData.map((data) => {
-            const { title, description, imageSrc } = data;
+          {projectsData1.map((data) => {
+            const { title, description, imageSrc, pageLink } = data;
             return (
               <SwiperSlide key={myId()}>
                 <div
@@ -44,10 +46,19 @@ const SkillDevelopmentCarousel = () => {
                   style={{ boxShadow: "1px 1px 3px black" }}
                 >
                   <div>
-                    <img src={imageSrc} alt="" className="w-full" />
+                    <img src={imageSrc} alt="" className="" />
                   </div>
                   <div className="px-3 mt-5">{title}</div>
                   <div className="px-3 mt-3 mb-3 text-xs">{description}</div>
+                  <div>
+                    <Link
+                      href={pageLink}
+                      className="border-[1px] border-[black] px-5 py-1 text-sm rounded mt-1 inline-block active:scale-[0.95]"
+                    >
+                      Visit{" "}
+                      <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    </Link>
+                  </div>
                 </div>
               </SwiperSlide>
             );
@@ -75,4 +86,4 @@ const SkillDevelopmentCarousel = () => {
   );
 };
 
-export default SkillDevelopmentCarousel;
+export default ProjectsCarousel;

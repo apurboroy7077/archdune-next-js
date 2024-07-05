@@ -6,6 +6,7 @@ import BannerSection from "./BannerSection";
 import MyFooter from "../global/footer/MyFooter";
 import SketchBookSection from "./SketchBookSection";
 import SkillDevelopmentCourseSection from "./SkillDevelopmentCourseSection";
+import ProjectsSection from "./ProjectsSection";
 
 const Homepage = () => {
   return (
@@ -14,6 +15,7 @@ const Homepage = () => {
       <BannerSection />
       <SketchBookSection />
       <SkillDevelopmentCourseSection />
+      <ProjectsSection />
       <MyFooter />
     </>
   );
