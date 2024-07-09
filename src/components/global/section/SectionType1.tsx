@@ -11,7 +11,7 @@ const SectionType1 = (props: propsType) => {
       <section>
         <div className="flex justify-center">
           <div
-            className={`mx-3 mt-16 lg:mt-20 max-w-[100rem] w-[100%] ${className}`}
+            className={`mx-3 mt-16 lg:mt-36 max-w-[100rem] w-[100%] ${className}`}
           >
             {children}
           </div>

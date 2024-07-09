@@ -8,6 +8,7 @@ import SketchBookSection from "./SketchBookSection";
 import SkillDevelopmentCourseSection from "./SkillDevelopmentCourseSection";
 import ProjectsSection from "./ProjectsSection";
 import JuryPanelSection from "./JuryPanelSection";
+import InstructorSection from "./InstructorSection";
 
 const Homepage = () => {
   return (
@@ -18,6 +19,7 @@ const Homepage = () => {
       <SkillDevelopmentCourseSection />
       <ProjectsSection />
       <JuryPanelSection />
+      <InstructorSection />
       <MyFooter />
     </>
   );

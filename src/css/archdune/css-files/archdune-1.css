@@ -10,6 +10,10 @@
   font-family: Poppins-Thin;
   src: url("./../fonts/Poppins-Thin.ttf") format("truetype");
 }
+@font-face {
+  font-family: Aktiv-Grotesk-W06-Light;
+  src: url("./../fonts/Aktiv-Grotesk-W06-Light.ttf") format("truetype");
+}
 body {
   font-family: Aktiv-Grotesk-W01-Medium;
 }
@@ -19,6 +23,9 @@ body {
 }
 .aktiv-grotesk-w06-regular {
   font-family: Aktiv-Grotesk-W06-Regular;
+}
+.aktiv-grotesk-w06-light {
+  font-family: Aktiv-Grotesk-W06-Light;
 }
 .poppins-thin {
   font-family: Poppins-Thin;
