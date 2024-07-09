@@ -5,7 +5,7 @@ type propsType = {
 const TitleText2 = (props: propsType) => {
   const { children } = props;
   return (
-    <span className=" text-2xl md:text-3xl font-bold mr-2">{children}</span>
+    <span className=" text-2xl md:text-4xl font-bold mr-2 ">{children}</span>
   );
 };
 
