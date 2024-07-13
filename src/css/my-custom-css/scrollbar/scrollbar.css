@@ -1,0 +1,24 @@
+.styled-scrollbar::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+.styled-scrollbar::-webkit-scrollbar-track {
+  /* background: #f1f1f1; */
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 6px;
+}
+
+.styled-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

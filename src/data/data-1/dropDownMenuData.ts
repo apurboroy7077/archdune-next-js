@@ -5,7 +5,7 @@ const dropDownMenuData = [
     extraInfo: [],
   },
   {
-    name: "Project",
+    name: "Projects",
     link: "/projects",
     extraInfo: [],
   },

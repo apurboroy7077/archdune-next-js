@@ -68,7 +68,7 @@ const MediumAndBigScreenNavbar = () => {
             </div>
             <div className="flex gap-9 pt-5">
               <BigScreenLinkType1 name="Home" link="/" />
-              <BigScreenLinkType1 name="Project" link="/project" />
+              <BigScreenLinkType1 name="Projects" link="/projects" />
               <BigScreenLinkType2
                 mainName="Learn"
                 properties={[

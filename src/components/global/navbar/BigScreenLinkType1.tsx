@@ -3,6 +3,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
 type activeStatusType = "ACTIVE" | "INACTIVE";
+type isCurrentPageType = "YES" | "NO";
 type propsType = {
   name: string;
   link: string;
@@ -13,20 +14,28 @@ const BigScreenLinkType1 = (props: propsType) => {
   const [activeStatus, setActiveStatus] = useState(
     "INACTIVE" as activeStatusType
   );
+  const [isCurrentPage, setIsCurrentPage] = useState("NO" as isCurrentPageType);
   const handleMouseEnter = () => {
     setActiveStatus("ACTIVE");
   };
   const handleMouseLeave = () => {
-    setActiveStatus("INACTIVE");
+    if (isCurrentPage === "NO") {
+      setActiveStatus("INACTIVE");
+    }
   };
   const handleMarkCurrentPath = () => {
     if (pathName === "/" && name === "Home") {
+      setIsCurrentPage("YES");
+      setActiveStatus("ACTIVE");
+    } else if (pathName === link) {
+      setIsCurrentPage("YES");
       setActiveStatus("ACTIVE");
     }
   };
   useEffect(() => {
     handleMarkCurrentPath();
   }, []);
+  console.log(pathName, link);
   return (
     <Link
       onMouseEnter={handleMouseEnter}
