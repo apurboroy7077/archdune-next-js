@@ -1,4 +1,5 @@
 "use client";
+import { commmonNameOfPages } from "@/data/data-1/menuData2";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -30,12 +31,17 @@ const BigScreenLinkType1 = (props: propsType) => {
     } else if (pathName === link) {
       setIsCurrentPage("YES");
       setActiveStatus("ACTIVE");
+    } else if (pathName.includes(name.toLowerCase())) {
+      setIsCurrentPage("YES");
+      setActiveStatus("ACTIVE");
+    } else {
+      console.log("Unknown Current Page.");
     }
   };
   useEffect(() => {
     handleMarkCurrentPath();
   }, []);
-  console.log(pathName, link);
+
   return (
     <Link
       onMouseEnter={handleMouseEnter}
