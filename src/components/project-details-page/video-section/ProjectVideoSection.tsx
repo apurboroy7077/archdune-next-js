@@ -1,3 +1,4 @@
+"use client";
 import myId from "@/functions/utils/myId";
 import React from "react";
 

@@ -1,3 +1,4 @@
+"use client";
 import SectionType1 from "@/components/global/section/SectionType1";
 import { greenTypeColor } from "@/data/data-1/colors";
 import myId from "@/functions/utils/myId";

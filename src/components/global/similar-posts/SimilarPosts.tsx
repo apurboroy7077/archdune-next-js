@@ -1,3 +1,4 @@
+"use client";
 import myId from "@/functions/utils/myId";
 import useBasic from "@/hooks/zustand/basicZustandHooks";
 import Link from "next/link";

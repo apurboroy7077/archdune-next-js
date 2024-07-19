@@ -1,3 +1,4 @@
+"use client";
 const PreviousAndNextProjectButtons = () => {
   return (
     <div className="flex justify-between">

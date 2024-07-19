@@ -1,3 +1,4 @@
+"use client";
 import React, { ReactNode } from "react";
 import SectionType1 from "./SectionType1";
 type propsType = {

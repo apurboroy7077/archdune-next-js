@@ -1,3 +1,5 @@
+"use client";
+
 import myId from "@/functions/utils/myId";
 import Link from "next/link";
 import React from "react";

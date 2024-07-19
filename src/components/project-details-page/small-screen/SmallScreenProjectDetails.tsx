@@ -1,3 +1,5 @@
+"use client";
+
 import SectionType1 from "@/components/global/section/SectionType1";
 import MostVisitedList from "@/components/projects-page/most-visited/MostVisitedList";
 import ProjectsList from "@/components/projects-page/projects-list/ProjectsList";
@@ -23,6 +25,7 @@ const SmallScreenProjectDetails = () => {
       <SectionType1 className="mt-7">
         <hr />
       </SectionType1>
+      {/* THIS VIDEO SECTION CAUSING A LITTLE LOADING PROBLEM */}
       <SectionType1 className="mt-7">
         <ProjectVideoSection />
       </SectionType1>
