@@ -15,7 +15,8 @@ const PhotographsPage = () => {
           PHOTOGRAPHY
         </div>
         <div className="text-center mt-3 lg:mt-7 text-sm lg:text-xl">
-          Photography is the art of capturing moments through a camera's lens.
+          Photography is the art of capturing moments through a camera&apos;s
+          lens.
         </div>
       </SectionType1>
 
@@ -41,15 +42,26 @@ const PhotographsPage = () => {
             buttonText="Md Hashinur Reza"
           />
         </div>
-        <div className="grid grid-cols-3 gap-5 mt-10">
+        <div className="grid lg:grid-cols-3 gap-5 mt-10">
           {Array.from({ length: 10 }).map(() => {
             const lottery = Math.floor(Math.random() * 2);
-            console.log(lottery);
+
             return (
               <>
                 <div
                   className={`col-span-1 ${
-                    lottery === 1 ? "row-span-1" : "row-span-2"
+                    lottery === 1 ? "row-span-2" : "row-span-2"
+                  }`}
+                >
+                  <img
+                    src="/images/jury/06_Md Hashinur Reza.jpg"
+                    alt=""
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div
+                  className={`col-span-1 ${
+                    lottery === 1 ? "row-span-1" : "row-span-1"
                   }`}
                 >
                   <img
