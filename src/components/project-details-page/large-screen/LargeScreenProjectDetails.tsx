@@ -10,6 +10,7 @@ import DetailsOfProject from "../details/DetailsOfProject";
 import SimilarPosts from "@/components/global/similar-posts/SimilarPosts";
 import ProjectVideoSection from "../video-section/ProjectVideoSection";
 import PreviousAndNextProjectButtons from "../buttons-previous-next-project/PreviousAndNextProjectButtons";
+import BigScreenUniversityList from "@/components/global/university/BigScreenUniversityList";
 
 const LargeScreenProjectDetails = () => {
   return (
@@ -19,20 +20,7 @@ const LargeScreenProjectDetails = () => {
           <div className="w-full border-r-[0.7rem]">
             <div>PROJECT</div>
             <hr />
-            <ul className=" mt-3">
-              {Array.from({ length: 25 }).map(() => {
-                return (
-                  <li key={myId()}>
-                    <Link
-                      href={""}
-                      className={`text-sm text-[${greenTypeColor}]`}
-                    >
-                      AIUB
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <BigScreenUniversityList />
           </div>
         </div>
         <div className="w-[58%] ">

@@ -1,12 +1,11 @@
 "use client";
 import SectionType1 from "@/components/global/section/SectionType1";
-import { greenTypeColor } from "@/data/data-1/colors";
-import myId from "@/functions/utils/myId";
-import Link from "next/link";
 import React from "react";
 import ProjectsList from "../projects-list/ProjectsList";
 import RecentUpdates from "../recent-updates/RecentUpdates";
 import MostVisitedList from "../most-visited/MostVisitedList";
+import ProjectList1BigScreen from "@/components/global/projects/ProjectList1BigScreen";
+import ProjectList2BigScreen from "@/components/global/projects/ProjectList2BigScreen";
 
 const BigScreen = () => {
   return (
@@ -16,35 +15,9 @@ const BigScreen = () => {
           <div className="w-full border-r-[0.7rem]">
             <div>PROJECT</div>
             <hr />
-            <ul className=" mt-3">
-              {Array.from({ length: 3 }).map(() => {
-                return (
-                  <li key={myId()}>
-                    <Link
-                      href={""}
-                      className={`text-sm text-[${greenTypeColor}]`}
-                    >
-                      Student Work
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <ProjectList1BigScreen />
             <hr className="mt-2" />
-            <ul className=" mt-3">
-              {Array.from({ length: 20 }).map(() => {
-                return (
-                  <li key={myId()}>
-                    <Link
-                      href={""}
-                      className={`text-sm text-[${greenTypeColor}]`}
-                    >
-                      Student Work
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <ProjectList2BigScreen />
           </div>
         </div>
         <div className="w-[58%] ">

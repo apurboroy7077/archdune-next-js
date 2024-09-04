@@ -1,0 +1,18 @@
+export const projectListData1 = [
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+  { name: "Students Work", link: "" },
+];
