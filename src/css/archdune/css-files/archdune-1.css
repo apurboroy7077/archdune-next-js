@@ -11,6 +11,14 @@
   src: url("./../fonts/Poppins-Thin.ttf") format("truetype");
 }
 @font-face {
+  font-family: Poppins-Regular;
+  src: url("./../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./../fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
   font-family: Aktiv-Grotesk-W06-Light;
   src: url("./../fonts/Aktiv-Grotesk-W06-Light.ttf") format("truetype");
 }
@@ -32,4 +40,10 @@ body {
 }
 .helvetica {
   font-family: Helvetica;
+}
+.poppins-regular {
+  font-family: Poppins-Regular;
+}
+.poppins-bold {
+  font-family: Poppins-Bold;
 }
