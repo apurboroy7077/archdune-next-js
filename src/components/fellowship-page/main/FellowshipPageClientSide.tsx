@@ -7,6 +7,7 @@ import ListOfStudentsSectionInFellowShip from "../list-of-students/ListOfStudent
 import EnrollmentProcessSectionFellowshipPage from "../enrollment-process-section/EnrollmentProcessSectionFellowshipPage";
 import EligibilityCriteriaSectionInFellowship from "../eligibility-criteria-section/EligibilityCriteriaSectionInFellowship";
 import BenifitsAsACampusAmbassadorSectionInFellowShipPage from "../benifits-as-a-campus-ambassador/BenifitsAsACampusAmbassadorSectionInFellowShipPage";
+import ResponsibilitiesAsACampusAmbassadorSectionInFellowShipPage from "../responsibilities-as-a-campus-ambassador/ResponsibilitiesAsACampusAmbassadorSectionInFellowShipPage";
 
 const FellowshipPageClientSide = () => {
   return (
@@ -17,6 +18,7 @@ const FellowshipPageClientSide = () => {
       <EnrollmentProcessSectionFellowshipPage />
       <EligibilityCriteriaSectionInFellowship />
       <BenifitsAsACampusAmbassadorSectionInFellowShipPage />
+      <ResponsibilitiesAsACampusAmbassadorSectionInFellowShipPage />
       <MyFooter />
     </>
   );
