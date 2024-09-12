@@ -9,6 +9,7 @@ import EligibilityCriteriaSectionInFellowship from "../eligibility-criteria-sect
 import BenifitsAsACampusAmbassadorSectionInFellowShipPage from "../benifits-as-a-campus-ambassador/BenifitsAsACampusAmbassadorSectionInFellowShipPage";
 import ResponsibilitiesAsACampusAmbassadorSectionInFellowShipPage from "../responsibilities-as-a-campus-ambassador/ResponsibilitiesAsACampusAmbassadorSectionInFellowShipPage";
 import ApplicationFormInFellowshipPage from "../application-form-in-fellowship-page/ApplicationFormInFellowshipPage";
+import SocialMediaSectionInFellowShipPage from "../stay-in-touch/SocialMediaSectionInFellowShipPage";
 
 const FellowshipPageClientSide = () => {
   return (
@@ -21,6 +22,7 @@ const FellowshipPageClientSide = () => {
       <BenifitsAsACampusAmbassadorSectionInFellowShipPage />
       <ResponsibilitiesAsACampusAmbassadorSectionInFellowShipPage />
       <ApplicationFormInFellowshipPage />
+      <SocialMediaSectionInFellowShipPage />
       <MyFooter />
     </>
   );
